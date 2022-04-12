@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: local('Bahnschrift'), /*scans for if it 
+    is on users computer, it most likely is because this 
+    is a windows 10 font*/
+        url('/resources/fonts/Bahnschrift.woff2') format('woff2'),
+        url('/resources/fonts/Bahnschrift.woff') format('woff');
+    font-weight:unset;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body { /*removes excess white border around website*/
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+█▄ █ ▄▀▄ █ █ 
+█ ▀█ █▀█ ▀▄▀ 
+*/
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 5px 10px 4px ;
+    text-align: right;
+}
+
+nav a {
+    font-family: Bahnschrift, sans-serif;
+    font-weight: 350;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font: banchrift;
+}
+
