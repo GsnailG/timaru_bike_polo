@@ -9,31 +9,155 @@
     font-weight:unset;
     font-style: normal;
     font-display: swap;
+
+    /* other font */
+    /* font-family: 'Radio Canada', sans-serif; */
+
 }
+
+
 
 html, body { /*removes excess white border around website*/
     margin: 0px;
     padding: 0px;
+    height: 100%;
 }
+
+header {
+    width: 100vw;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/resources/pictures/shanonrich.jpg");
+    background-position: right 40px;
+    background-attachment: fixed;
+}
+
+.block {
+    /*background*/
+    background: rgba(10, 10, 10, 0.7);
+    color: white;
+    box-shadow: 10px 10px rgba(10, 10, 10, 0.2);
+}
+
 
 /*
 █▄ █ ▄▀▄ █ █ 
 █ ▀█ █▀█ ▀▄▀ 
 */
 
+
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: black;
     color: white;
-    padding: 5px 10px 4px ;
     text-align: right;
 }
 
 nav a {
     font-family: Bahnschrift, sans-serif;
     font-weight: 350;
-    font-size: 32px;
+    font-size: 4vh;
     color: white;
     text-decoration: none;
     font: banchrift;
 }
 
+
+/*
+▀█▀ █ ▀█▀ █   ██▀ 
+ █  █  █  █▄▄ █▄▄ 
+*/
+@media screen and (min-width: 500px) {
+    .title {
+        margin-top: 20px;
+    }
+}
+
+.title {
+
+    margin-top: calc(40vh - 83px);
+
+    /* centering self*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
+    /* align items in div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 70px;
+}
+
+.title-logo {
+    flex-basis: 2%;
+    padding-right: 3px;
+}
+
+.title-text {
+    font-family: 'Radio Canada', sans-serif; 
+    font-size: 215%;
+}
+
+.title-text h1 {
+    margin: 0px;
+}
+
+
+/*
+█▄ ▄█ ▄▀▄ █ █▄ █ 
+█ ▀ █ █▀█ █ █ ▀█ 
+*/
+
+.main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main p{
+    font-family: 'Radio Canada', sans-serif; 
+    font-weight: 300;
+    font-size: 3vh;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+/*
+█▀ ▄▀▄ ▄▀▄ ▀█▀ ██▀ █▀▄ 
+█▀ ▀▄▀ ▀▄▀  █  █▄▄ █▀▄ 
+*/
+
+
+.flexbottom {
+    min-height: calc(100vh - 250px);
+} 
+
+
+.footer { 
+    
+    /* centering */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding */
+    margin-top: 10%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+
+    /* looks */
+    font-family: 'Radio Canada', sans-serif; 
+    font-size: 40px;
+    text-align: center;
+}
