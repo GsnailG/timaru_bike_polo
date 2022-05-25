@@ -23,9 +23,6 @@ html, body { /*removes excess white border around website*/
     height: 100%;
 }
 
-header {
-    width: 100vw;
-}
 
 body {
     background-size: cover;
@@ -52,17 +49,25 @@ body {
 nav {
     position: fixed;
     top: 0;
+    z-index: inherit;
+
     width: 100%;
+    height: auto;
+    padding: 12px 0vh 12px 0;
+
     background-color: black;
     color: white;
-    text-align: right;
+    text-align: center;
 }
 
+
+
 nav a {
+    font-size: 70px;
     font-family: Bahnschrift, sans-serif;
     font-weight: 350;
-    font-size: 4vh;
     color: white;
+    padding: 0 20px 0 20px;
     text-decoration: none;
     font: banchrift;
 }
@@ -72,15 +77,10 @@ nav a {
 ▀█▀ █ ▀█▀ █   ██▀ 
  █  █  █  █▄▄ █▄▄ 
 */
-@media screen and (min-width: 500px) {
-    .title {
-        margin-top: 20px;
-    }
-}
 
 .title {
 
-    margin-top: calc(40vh - 83px);
+    margin-top: calc(30vh - 83px);
 
     /* centering self*/
     width: 90%;
@@ -94,8 +94,8 @@ nav a {
     justify-content: center;
 }
 
-img {
-    width: 70px;
+.title img {
+    width: 15vw;
 }
 
 .title-logo {
@@ -105,10 +105,10 @@ img {
 
 .title-text {
     font-family: 'Radio Canada', sans-serif; 
-    font-size: 215%;
 }
 
 .title-text h1 {
+    font-size: 7vw;
     margin: 0px;
 }
 
@@ -125,9 +125,14 @@ img {
 }
 
 .main p{
+    font-size: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: 'Radio Canada', sans-serif; 
     font-weight: 300;
-    font-size: 3vh;
+
     padding: 10px 10px 10px 10px;
 }
 
@@ -158,6 +163,5 @@ img {
 
     /* looks */
     font-family: 'Radio Canada', sans-serif; 
-    font-size: 40px;
     text-align: center;
 }
