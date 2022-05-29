@@ -69,7 +69,6 @@ nav a {
     color: white;
     padding: 0 20px 0 20px;
     text-decoration: none;
-    font: banchrift;
 }
 
 
@@ -79,11 +78,12 @@ nav a {
 */
 
 .title {
-
-    margin-top: calc(30vh - 83px);
-
     /* centering self*/
+    height: 10vw;
+
     width: 90%;
+    margin-top: calc(50vh - 70px);
+    margin-bottom: 60vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -95,7 +95,7 @@ nav a {
 }
 
 .title img {
-    width: 15vw;
+    width: 10vw;
 }
 
 .title-logo {
@@ -162,6 +162,8 @@ nav a {
     margin-bottom: 20px;
 
     /* looks */
+    font-size: 40px;
+
     font-family: 'Radio Canada', sans-serif; 
     text-align: center;
 }
