@@ -30,6 +30,7 @@ body {
     background-image: url("/resources/pictures/shanonrich.jpg");
     background-position: right 40px;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .block {
