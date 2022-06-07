@@ -55,7 +55,7 @@ nav {
 
     width: 100%;
     height: auto;
-    padding: 12px 0vh 12px 0;
+    padding: 12px 0 12px 0;
 
     background-color: black;
     color: white;
@@ -65,12 +65,18 @@ nav {
 
 
 nav a {
-    font-size: 2vw;
+    font-size: 30px;
     font-family: Bahnschrift, sans-serif;
     font-weight: 350;
     color: white;
     padding: 0 20px 0 20px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 7vw;
+    }
 }
 
 
