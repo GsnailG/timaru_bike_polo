@@ -23,11 +23,21 @@ html, body { /*removes excess white border around website*/
     height: 100%;
 }
 
+/*
+▄▀▀ ▄▀▄ █▄ ▄█ █▄ ▄█ ▄▀▄ █▄ █ 
+▀▄▄ ▀▄▀ █ ▀ █ █ ▀ █ ▀▄▀ █ ▀█ 
+rules that are commonly used
+*/
+
 .block {
     /*background*/
     background: rgba(10, 10, 10, 0.7);
     color: white;
     box-shadow: 10px 10px rgba(10, 10, 10, 0.2);
+}
+
+.gap {
+    height: 5vh;
 }
 
 .background {
@@ -45,6 +55,7 @@ html, body { /*removes excess white border around website*/
 /*
 █▄ █ ▄▀▄ █ █ 
 █ ▀█ █▀█ ▀▄▀ 
+navigation
 */
 
 
@@ -55,7 +66,7 @@ nav {
 
     width: 100%;
     height: auto;
-    padding: 12px 0 12px 0;
+    padding: 8px 0 8px 0;
 
     background-color: black;
     color: white;
@@ -65,7 +76,7 @@ nav {
 
 
 nav a {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Bahnschrift, sans-serif;
     font-weight: 350;
     color: white;
@@ -73,17 +84,17 @@ nav a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 576px) {
     nav a {
-        font-size: 7vw;
+        font-size: 20px;
     }
 }
-
 
 /*
 ▀█▀ █ ▀█▀ █   ██▀ 
  █  █  █  █▄▄ █▄▄ 
-*/
+the logo and title
+ */
 
 .title {
     /* centering self*/
@@ -124,60 +135,38 @@ nav a {
 /*
 █▄ ▄█ ▄▀▄ █ █▄ █ 
 █ ▀ █ █▀█ █ █ ▀█ 
+the content
 */
 
 .main {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 .main p{
-    font-size: 60px;
-
-    margin-left: auto;
-    margin-right: auto;
-
+    font-size: 6vw;
     font-family: 'Radio Canada', sans-serif; 
     font-weight: 300;
 
-    padding: 10px 100px 10px 100px;
+    padding: 5px 10px 5px 10px;
 }
-
-
-@media screen and (max-width: 600px) {
-    .main p{
-        font-size: 60px;
-    
-        margin-left: auto;
-        margin-right: auto;
-    
-        font-family: 'Radio Canada', sans-serif; 
-        font-weight: 300;
-    
-        padding: 10px 10px 10px 10px;
-    }
-}
-
-
-
 
 
 /*
 █▀ ▄▀▄ ▄▀▄ ▀█▀ ██▀ █▀▄ 
 █▀ ▀▄▀ ▀▄▀  █  █▄▄ █▀▄ 
+everything down under
 */
-
-
-.flexbottom {
-    min-height: calc(100vh - 250px);
-} 
 
 
 .footer { 
     
     /* centering */
-    width: 90%;
+    width: calc(80% + 20px ); /* the main divs 
+    are 80%, but with 10px padding on eachs side*/
+
     margin-left: auto;
     margin-right: auto;
 
@@ -185,12 +174,11 @@ nav a {
 
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 10%;
-    margin-bottom: 70px;
-
-    /* looks */
-    font-size: 2vw;
 
     font-family: 'Radio Canada', sans-serif; 
     text-align: center;
+}
+
+.footer small {
+    font-size: 32px;
 }
