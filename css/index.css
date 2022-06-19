@@ -86,7 +86,7 @@ nav a {
 
 @media screen and (min-width: 576px) {
     nav a {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
@@ -127,7 +127,7 @@ the logo and title
 }
 
 .title-text h1 {
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 0px;
 }
 
@@ -135,23 +135,113 @@ the logo and title
 /*
 █▄ ▄█ ▄▀▄ █ █▄ █ 
 █ ▀ █ █▀█ █ █ ▀█ 
-the content
+the bit of everything
 */
 
 .main {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    width: 90vw;
 }
 
-.main p{
+.home-content p{
     font-size: 6vw;
     font-family: 'Radio Canada', sans-serif; 
     font-weight: 300;
 
+
     padding: 5px 10px 5px 10px;
 }
+
+@media screen and (min-width: 576px) {
+    .home-content  p {
+        font-size: 30px;
+
+    }
+}
+
+/*
+▄▀▀ ▄▀▄ ▄▀▀ █ ▄▀▄ █   
+▄█▀ ▀▄▀ ▀▄▄ █ █▀█ █▄▄ 
+social media page
+*/
+
+
+
+
+.socialmedia {
+    display: grid;
+    width: calc(90% + 20px);
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 40px;
+
+}
+
+.socialmedia img {
+    margin-top: 0;
+    display: flex;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;    
+    padding-bottom: 10px;
+}
+
+.socialmedia a h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Radio Canada', sans-serif; 
+}
+
+.socialmedia a:link, .socialmedia a:visited, .socialmedia a:hover, .socialmedia a:active { 
+    text-decoration: none; /* remove underline from links */
+}
+
+ 
+/* desktop social media*/
+@media screen and (min-width: 576px) {
+
+    .socialmedia {    
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    
+        margin-bottom: 30vh; /* adds a gap between content and footer*/
+    }
+    
+    .socialmedia img {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .button1 , .button2 , .button3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vw;
+    }
+
+    .button1 {
+        grid-column-start: 1;
+    }
+    .button2 {
+        grid-column-start: 2;
+    }
+    .button3 {
+        grid-column-start: 3;
+    }
+
+    .button3 h2 {
+        word-wrap: break-word;
+    }
+}
+
 
 
 /*
@@ -162,11 +252,6 @@ everything down under
 
 
 .footer { 
-    
-    /* centering */
-    width: calc(80% + 20px ); /* the main divs 
-    are 80%, but with 10px padding on eachs side*/
-
     margin-left: auto;
     margin-right: auto;
 
@@ -180,5 +265,20 @@ everything down under
 }
 
 .footer small {
-    font-size: 32px;
+    font-weight: lighter;
+    font-size: 20px;
 }
+
+/*social footers*/
+
+@media screen and (min-width: 576px) {
+    .footer {
+        font-size: 35px;
+    }
+}
+
+.socialfooter, .mainfooter {
+    margin-top: 20px;
+    width: calc(90vw + 20px);
+}
+
