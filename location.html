@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="css/index.css">
+    <script src="scripts.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,37 +11,54 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>&bull;
-            <a href="social.html">Social</a>&bull;
-            <a href="location.html">Location</a> 
-        </nav>
-    </header>
-
-    <div class="background"></div>
-
-    <div class="block title">
-        <div class="title-logo">
-            <img src="/resources/pictures/logo_bgremoved.png">
-         </div>
-
-         <div class="title-text"> 
-            <h1>WHERE ARE WE?</h1>
-         </div>
+      
+    <div class="preload" id="preload">
+        <div class="preload-content">
+            <img src="/resources/pictures/logo.png">
+            <div class="funnyspin"></div>
+        </div>
     </div>
-
-    <div class="block">
-
-    </div>
-
-    <div class="gap"></div> <!-- adds a small gap, 
-        saves having to use the same css over and over-->   
     
-    <div class="block footer">
-        <small>&copy; Timaru Bike Polo 2022<small> 
-    </div>
 
-    <div class="gap"></div>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>&bull;
+                <a href="social.html">Social</a>&bull;
+                <a href="location.html">Location</a> 
+            </nav>
+        </header>
+
+        <div class="background"></div>
+
+        <div class="block title">
+            <div class="title-logo">
+                <img src="/resources/pictures/logo_bgremoved.png">
+            </div>
+
+            <div class="title-text"> 
+                <h1>WHERE ARE WE?</h1>
+            </div>
+        </div>
+
+        <div class="block map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.0702316428565!2d171.24802538671622!3d-44.39068001055815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2cc18eb452d003%3A0x4b2f186b70e2fd49!2sTimaru%20Hardcourt%20Bike%20Polo!5e0!3m2!1sen!2snz!4v1655770283180!5m2!1sen!2snz" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="mapinfo">
+                <p>
+                    Timaru Bike Polo Courts can be accessed across 
+                    from Litle India, or beside the 
+                    comunity skateboard park. The courts may also be
+                    found with directions to CPlay.
+                </p>
+            </div>
+        </div>
+
+        <div class="gap"></div> <!-- adds a small gap, 
+            saves having to use the same css over and over-->   
+        
+        <div class="block footer">
+            <small>&copy; Timaru Bike Polo 2022<small> 
+        </div>
+
+        <div class="gap"></div>
 
 </body>
