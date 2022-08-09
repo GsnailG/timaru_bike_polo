@@ -1,0 +1,420 @@
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: local('Bahnschrift'), /*scans for if it 
+    is on users computer, it most likely is because this 
+    is a windows 10 font*/
+        url('/resources/fonts/Bahnschrift.woff2') format('woff2'),
+        url('/resources/fonts/Bahnschrift.woff') format('woff');
+    font-weight:unset;
+    font-style: normal;
+    font-display: swap;
+
+    /* other font */
+    /* font-family: 'Radio Canada', sans-serif; */
+
+}
+
+:root {
+    --black: #000000;
+    --almost-black: rgb(61, 61, 61);
+    --white: #ffffff;
+}
+
+html, body { /*removes excess white border around website*/
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+/*
+▄▀▀ ▄▀▄ █▄ ▄█ █▄ ▄█ ▄▀▄ █▄ █ 
+▀▄▄ ▀▄▀ █ ▀ █ █ ▀ █ ▀▄▀ █ ▀█ 
+rules that are commonly used
+*/
+
+.block {
+    /*background*/
+    background: rgba(10, 10, 10, 0.7);
+    color: var(--white);
+    box-shadow: 10px 10px rgba(10, 10, 10, 0.2);
+}
+
+.gap {
+    height: 5vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+.background1 {
+    background-image: url(" resources/pictures/shanonrich.jpg");
+}
+.background2 {
+    background-image: url("resources/pictures/bikestanding.jpeg");
+    background-position: center;
+}
+.background3 {
+    background-image: url("resources/pictures/mike.jpeg");
+    background-position: center;
+}
+
+/*
+█   ▄▀▄ ▄▀▄ █▀▄ █ █▄ █ ▄▀     ▄▀▀ ▄▀▀ █▀▄ ██▀ ██▀ █▄ █ 
+█▄▄ ▀▄▀ █▀█ █▄▀ █ █ ▀█ ▀▄█    ▄█▀ ▀▄▄ █▀▄ █▄▄ █▄▄ █ ▀█ 
+the thing that hides the dirty stuff
+*/
+
+.content {
+    z-index: -20;
+    /* display:margin: ; none is not an option as it 
+    does not preload */
+}
+
+.preload {
+    z-index: 20;
+    height: 100vh;
+    background-color: var(--black);
+    width: 100vw;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+    transition: 2s linear;
+}
+
+.preload-content {
+    margin-top: 33vh;
+    display: grid;
+}
+
+
+.preload img {
+    grid-row: 1;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.funnyspin {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 6px solid var(--almost-black);
+    border-top: 6px solid var(--white);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes fadeOut {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+█▄ █ ▄▀▄ █ █ 
+█ ▀█ █▀█ ▀▄▀ 
+navigation
+*/
+
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: inherit;
+
+    width: 100%;
+    height: auto;
+    padding: 8px 0 8px 0;
+
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+nav a {
+    font-size: 20px;
+    font-family: Bahnschrift, sans-serif;
+    font-weight: 350;
+    color: white;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) { /* desktop */
+    nav a {
+        font-size: 20px;
+    }
+}
+
+/*
+▀█▀ █ ▀█▀ █   ██▀ 
+ █  █  █  █▄▄ █▄▄ 
+the logo and title
+ */
+
+.title {
+    /* centering self*/
+    height: 10vw;
+
+    width: 90%;
+    margin-top: calc(50vh - 70px);
+    margin-bottom: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
+    /* align items in div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title img {
+    width: 10vw;
+}
+
+.title-logo {
+    flex-basis: 0%;
+    padding-right: 0px;
+}
+
+.title-text {
+    font-family: 'Radio Canada', sans-serif; 
+}
+
+.title-text h1 {
+    font-size: 7vw;
+    margin: 0px;
+}
+
+
+/*
+█▄ ▄█ ▄▀▄ █ █▄ █ 
+█ ▀ █ █▀█ █ █ ▀█ 
+the bit of everything
+*/
+
+.main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 90vw;
+}
+
+.home-content p{
+    font-size: 6vw;
+    font-family: 'Radio Canada', sans-serif; 
+    font-weight: 300;
+
+
+    padding: 5px 10px 5px 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .home-content  p {
+        font-size: 30px;
+
+    }
+}
+
+/*
+▄▀▀ ▄▀▄ ▄▀▀ █ ▄▀▄ █   
+▄█▀ ▀▄▀ ▀▄▄ █ █▀█ █▄▄ 
+social media page
+*/
+
+
+
+
+.socialmedia {
+    display: grid;
+    width: calc(90% + 20px);
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 40px;
+}
+
+.socialmedia img {
+    margin-top: 0;
+    display: flex;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;    
+    padding-bottom: 10px;
+}
+
+.socialmedia a h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Radio Canada', sans-serif; 
+}
+
+.socialmedia a:link, .socialmedia a:visited, .socialmedia a:hover, .socialmedia a:active { 
+    text-decoration: none; /* remove underline from links */
+}
+
+ 
+/* desktop social media*/
+@media screen and (min-width: 576px) {
+
+    .socialmedia {    
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    
+        margin-bottom: 30vh; /* adds a gap between content and footer*/
+    }
+    
+    .socialmedia img {
+        width: 12vw;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    .button1 , .button2 , .button3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button1 {
+        grid-column-start: 1;
+    }
+    .button2 {
+        grid-column-start: 2;
+    }
+    .button3 {
+        grid-column-start: 3;
+    }
+
+}
+
+/*
+█   ▄▀▄ ▄▀▀ ▄▀▄ ▀█▀ █ ▄▀▄ █▄ █ 
+█▄▄ ▀▄▀ ▀▄▄ █▀█  █  █ ▀▄▀ █ ▀█ 
+where are we?
+*/
+
+.map {
+    display: grid;
+    width: calc(90vw + 20px );
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map iframe {
+    height: 70vh;
+    width: 100%;
+}
+
+.mapinfo {
+    grid-column: 1;
+}
+
+.mapinfo p {
+    font-family: "Radio Canada";
+    font-size: 22.5px;
+    font-weight: lighter;
+
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+@media screen and (min-width: 576px) { /* desktop view */
+    .map {
+        display: grid;
+        width: calc(90vw + 20px );
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .map iframe {
+        height: 70vh;
+        width: 50vw;
+    }
+    
+    .mapinfo {
+        grid-column: 2;
+    }
+
+}
+
+
+/*
+█▀ ▄▀▄ ▄▀▄ ▀█▀ ██▀ █▀▄ 
+█▀ ▀▄▀ ▀▄▀  █  █▄▄ █▀▄ 
+everything down under
+*/
+
+
+.footer { 
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding */
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: 'Radio Canada', sans-serif; 
+    text-align: center;
+}
+
+.footer small {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+/*social footers*/
+
+@media screen and (min-width: 576px) {
+    .footer {
+        padding: 0;
+        font-size: 35px;
+        height: 53px;
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    width: calc(90vw + 20px);
+}
+
