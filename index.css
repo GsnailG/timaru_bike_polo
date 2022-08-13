@@ -1,11 +1,14 @@
 
 @font-face {
-    font-family: 'Bahnschrift';
+    font-family:'Bahnschrift';
     src: local('Bahnschrift'), /*scans for if it 
     is on users computer, it most likely is because this 
     is a windows 10 font*/
-        url('/resources/fonts/Bahnschrift.woff2') format('woff2'),
-        url('/resources/fonts/Bahnschrift.woff') format('woff');
+        url('fonts/Bahnschrift.woff2') format('woff2'),
+        url('fonts/Bahnschrift.woff') format('woff');
+        /* note to future devs, do not change filepath,
+        as it will cause local errors, that are not shown
+        during live preview */
     font-weight:unset;
     font-style: normal;
     font-display: swap;
