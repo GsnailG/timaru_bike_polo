@@ -56,6 +56,19 @@ rules that are commonly used
     background-size: cover;
     z-index: -1;
 }
+
+@media screen and (min-width: 576px) { /* desktop */
+    .background1 {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 576px) { /* mobile */
+    .background1 {
+        background-position: 120vw;
+    }
+}
+
 .background1 {
     background-image: url(" resources/pictures/shanonrich.jpg");
 }
@@ -189,9 +202,9 @@ the logo and title
     /* centering self*/
     height: 10vw;
 
-    width: 90%;
+    width: 95%;
     margin-top: calc(50vh - 70px);
-    margin-bottom: 60vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -203,10 +216,11 @@ the logo and title
 }
 
 .title img {
-    width: 10vw;
+    width: 9vw;
 }
 
 .title-logo {
+    margin-top: 4px;
     flex-basis: 0%;
     padding-right: 0px;
 }
